@@ -151,7 +151,7 @@
           <div class="space-y-2">
             <h3 class="text-xl font-bold text-white flex items-center space-x-2">
               <span>Aachico Vault</span>
-              <span class="text-xs text-amber-400 font-normal">(फ्ललीट ओएस)</span>
+              <span class="text-xs text-amber-400 font-normal">(फ़्लीट ओएस)</span>
             </h3>
             <p class="text-xs text-slate-300 leading-relaxed">
               टैक्सी व ट्रांसपोर्ट ऑपरेटरों के लिए कम्प्लीट मैनेजमेंट। मीटर ऑडिट, ड्राइवर कैश लेज़र, मैनेजर इनवॉइसिंग और लाइव क्लाउड सिंक।
@@ -177,7 +177,7 @@
           <div class="space-y-2">
             <h3 class="text-xl font-bold text-white">Custom Business Software</h3>
             <p class="text-xs text-slate-300 leading-relaxed">
-              इवेंट्री, बिलिंग, CRM और ऑटोमेशन सिस्टम। आपकी कंपनी और ऑपरेशन्स के हिसाब से कस्टमाइज्ड वेब व मोबाइल सॉफ्टवेयर डेवलपमेंट।
+              इन्वेंट्री, बिलिंग, CRM और ऑटोमेशन सिस्टम। आपकी कंपनी और ऑपरेशन्स के हिसाब से कस्टमाइज्ड वेब व मोबाइल सॉफ्टवेयर डेवलपमेंट।
             </p>
           </div>
 
@@ -202,7 +202,6 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        
         <!-- Windows Card -->
         <div class="glass-card p-5 rounded-2xl border border-slate-800 space-y-4">
           <div class="flex items-center space-x-3">
@@ -215,10 +214,10 @@
             </div>
           </div>
           <p class="text-[11px] text-slate-400">डेस्कटॉप एडमिन व मैनेजर बिलिंग डैशबोर्ड के लिए।</p>
-          <a href="./downloads/aachico-vault-setup.exe" download class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center space-x-1.5 shadow-md">
-            <i data-lucide="download" class="w-3.5 h-3.5 text-blue-400"></i>
+          <button onclick="downloadAlert('Windows')" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2 rounded-xl text-xs transition flex items-center justify-center space-x-1.5">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
             <span>Download .EXE</span>
-          </a>
+          </button>
         </div>
 
         <!-- Linux Card -->
@@ -233,10 +232,10 @@
             </div>
           </div>
           <p class="text-[11px] text-slate-400">Ubuntu, Debian और Linux प्रणालियों के लिए पैकेज।</p>
-          <a href="./downloads/aachico-vault.deb" download class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center space-x-1.5 shadow-md">
-            <i data-lucide="download" class="w-3.5 h-3.5 text-amber-400"></i>
+          <button onclick="downloadAlert('Linux')" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2 rounded-xl text-xs transition flex items-center justify-center space-x-1.5">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
             <span>Download .DEB</span>
-          </a>
+          </button>
         </div>
 
         <!-- Android Card -->
@@ -251,10 +250,10 @@
             </div>
           </div>
           <p class="text-[11px] text-slate-400">ड्राइवरों और फील्ड एजेंट्स के लिए तेज व ऑफ़लाइन-रेडी ऐप।</p>
-          <a href="./downloads/aachico-vault-app.apk" download class="w-full bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center space-x-1.5 shadow-md">
+          <button onclick="downloadAlert('Android')" class="w-full bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 font-bold py-2 rounded-xl text-xs transition flex items-center justify-center space-x-1.5">
             <i data-lucide="download" class="w-3.5 h-3.5"></i>
             <span>Download APK</span>
-          </a>
+          </button>
         </div>
 
         <!-- Apple iOS / Mac Card -->
@@ -268,13 +267,12 @@
               <span class="text-[10px] text-slate-400">Web App & DMG</span>
             </div>
           </div>
-          <p class="text-[11px] text-slate-400">iPhone, iPad व Safari पर 1-टैप में होम स्क्रीन पर जोड़ें।</p>
-          <a href="https://aachicoinfotech.github.io/aachico-vault/" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center space-x-1.5 shadow-md">
-            <i data-lucide="plus-square" class="w-3.5 h-3.5 text-purple-400"></i>
+          <p class="text-[11px] text-slate-400">iPhone, iPad व Safari पर 1-टैप में होम स्क्रीन पर जोड़ें।</p>
+          <button onclick="downloadAlert('iOS')" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2 rounded-xl text-xs transition flex items-center justify-center space-x-1.5">
+            <i data-lucide="plus-square" class="w-3.5 h-3.5"></i>
             <span>Add to Home Screen</span>
-          </a>
+          </button>
         </div>
-
       </div>
     </div>
   </section>
@@ -326,6 +324,14 @@
     window.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
     });
+
+    function downloadAlert(platform) {
+      if(platform === 'iOS') {
+        alert("Apple iOS के लिए Safari में Aachico Vault खोलें और 'Share' बटन दबाकर 'Add to Home Screen' चुनें।");
+      } else {
+        alert("Aachico " + platform + " बिल्ड पैकेज तैयार किया जा रहा है। आप तत्काल वेब वर्शन से इसका पूरा उपयोग कर सकते हैं!");
+      }
+    }
   </script>
 </body>
 </html>

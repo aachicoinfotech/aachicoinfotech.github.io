@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI और बचत कैलकुलेटर - Aachico Infotech | Aachico Vault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        brandPrimary: '#6366f1',
+                        brandAccent: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brandPrimary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
+                    <i data-lucide="calculator" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Corporate Software Hub</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
+                <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+                <a href="calculator.html" class="text-indigo-400 font-semibold">कैलकुलेटर</a>
+                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </nav>
+            <div>
+                <a href="index.html#download" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span>ऐप डाउनलोड</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 inline-block mb-6">स्मार्ट फाइनेंशियल टूल</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+                    फ्लीट ROI और <span class="bg-gradient-to-r from-emerald-400 to-indigo-400 bg-clip-text text-transparent">बचत कैलकुलेटर</span>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    जानीए कि Aachico Vault फ्लीट मैनेजमेंट ओएस का उपयोग करके आपका ट्रांसपोर्ट बिजनेस हर महीने कितना समय और पैसा बचा सकता है।
+                </p>
+            </div>
+        </section>
+
+        <!-- Calculator Tool Section -->
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-2xl mx-auto">
+            <div class="bg-cardBg backdrop-blur-xl border border-emerald-500/40 rounded-2xl p-8 shadow-xl shadow-emerald-500/10 space-y-6">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">आपके फ्लीट में वाहनों की संख्या (Taxis/Vehicles)</label>
+                    <input type="number" id="vehicleCount" value="5" min="1" max="500" class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500 transition-colors" oninput="calculateSavings()">
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 space-y-4 text-center">
+                    estimated monthly savings
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-slate-400 block mb-1">अनुमानित मासिक बचत (Estimated Monthly Savings)</span>
+                        <span id="savingsOutput" class="text-4xl font-extrabold text-emerald-400">₹14,500</span>
+                    </div>
+                    <p class="text-xs text-slate-500">मैनुअल हिसाब-किताब की गलती और ईंधन/टोल लीकेज रोकने पर आधारित अनुमान।</p>
+                </div>
+
+                <a href="contact.html" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-brandPrimary text-white font-medium text-sm shadow-lg shadow-emerald-500/25 hover:opacity-90 transition-all flex items-center justify-center space-x-2">
+                    <span>इस बचत का लाभ उठाएं - डेमो बुक करें</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
+            <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calculator Logic Script -->
+    <script>
+        function calculateSavings() {
+            const count = document.getElementById('vehicleCount').value || 1;
+            // प्रति वाहन अनुमानित मासिक बचत ₹2,900
+            const savings = count * 2900;
+            document.getElementById('savingsOutput').innerText = `₹${savings.toLocaleString('en-IN')}`;
+        }
+    </script>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

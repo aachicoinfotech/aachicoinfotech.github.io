@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एंड्रॉइड ऐप डाउनलोड - Aachico Infotech | Aachico Vault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        brandPrimary: '#6366f1',
+                        brandAccent: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brandPrimary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
+                    <i data-lucide="smartphone" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Corporate Software Hub</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
+                <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+                <a href="downloads.html" class="text-indigo-400 font-semibold">डाउनलोड्स</a>
+                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </nav>
+            <div>
+                <a href="index.html#download" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span>ऐप डाउनलोड</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 inline-block mb-6">मोबाइल और ड्राइवर पोर्टल</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+                    Android APK <span class="bg-gradient-to-r from-emerald-400 to-indigo-400 bg-clip-text text-transparent">डाउनलोड</span>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    ड्राइवरों और फ्लीट मैनेजरों के लिए Aachico Vault का मोबाइल ऐप सीधे अपने एंड्रॉइड फोन पर इंस्टॉल करें।
+                </p>
+            </div>
+        </section>
+
+        <!-- Download Card Section -->
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+            <div class="bg-cardBg backdrop-blur-xl border border-emerald-500/40 rounded-2xl p-8 shadow-xl shadow-emerald-500/10 space-y-6">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-emerald-500/10 p-4 rounded-xl text-emerald-400">
+                        <i data-lucide="smartphone" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Aachico Vault Mobile APK</h3>
+                        <p class="text-slate-400 text-xs mt-1">वर्शन 2.4.0 (Beta) • Android 8.0 या उच्चतर</p>
+                    </div>
+                </div>
+
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="flex items-center space-x-3"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span>रियल-टाइम ट्रिप प्रविष्टि और नोटिफिकेशन</span></li>
+                    <li class="flex items-center space-x-3"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span>ड्राइवर और मैनेजर के लिए अलग लॉगिन</span></li>
+                    <li class="flex items-center space-x-3"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span>लो-डेटा और ऑफलाइन मोड सपोर्ट</span></li>
+                </ul>
+
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="index.html#download" class="flex-1 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-brandPrimary text-white font-medium text-sm shadow-lg shadow-emerald-500/25 hover:opacity-90 transition-all text-center flex items-center justify-center space-x-2">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>APK डाउनलोड करें (Beta)</span>
+                    </a>
+                    <a href="contact.html" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm transition-all text-center">
+                        व्हाट्सएप सहायता
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
+            <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="downloads.html" class="hover:text-indigo-400 transition-colors">डाउनलोड सेंटर</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

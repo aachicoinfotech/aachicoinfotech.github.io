@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सहायता केंद्र - Aachico Infotech | Aachico Vault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        brandPrimary: '#6366f1',
+                        brandAccent: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brandPrimary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
+                    <i data-lucide="headphones" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Corporate Software Hub</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
+                <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+                <a href="support.html" class="text-indigo-400 font-semibold">सहायता केंद्र</a>
+                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </nav>
+            <div>
+                <a href="index.html#download" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span>ऐप डाउनलोड</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 inline-block mb-6">24/7 तकनीकी सहायता</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+                    Aachico <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">सपोर्ट डेस्क</span>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    फ्लीट मैनेजमेंट ओएस सेटअप, लॉगिन या ट्रिप प्रविष्टि से संबंधित किसी भी सहायता के लिए हमारी टीम से संपर्क करें।
+                </p>
+            </div>
+        </section>
+
+        <!-- Support Options Grid -->
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:border-indigo-500/50 transition-all">
+                    <div class="bg-emerald-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-emerald-400 mb-6">
+                        <i data-lucide="message-square" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">व्हाट्सएप सपोर्ट</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        सबसे तेज प्रतिक्रिया के लिए सीधे हमारे व्हाट्सएप नंबर पर अपनी समस्या लिखकर भेजें।
+                    </p>
+                    <a href="contact.html" class="text-indigo-400 font-semibold text-sm hover:underline inline-flex items-center space-x-2">
+                        <span>चैट शुरू करें</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:border-indigo-500/50 transition-all">
+                    <div class="bg-indigo-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-indigo-400 mb-6">
+                        <i data-lucide="help-circle" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">अक्सर पूछे जाने वाले सवाल</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        हमारे सामान्य प्रश्नों (FAQ) और बिलिंग गाइड पृष्ठ पर तुरंत समाधान खोजें।
+                    </p>
+                    <a href="faq.html" class="text-indigo-400 font-semibold text-sm hover:underline inline-flex items-center space-x-2">
+                        <span>FAQ देखें</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:border-indigo-500/50 transition-all">
+                    <div class="bg-purple-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-purple-400 mb-6">
+                        <i data-lucide="mail" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">ईमेल सहायता</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        विस्तृत तकनीकी पूछताछ के लिए हमारे आधिकारिक ईमेल पर संपर्क करें।
+                    </p>
+                    <span class="text-slate-300 font-mono text-xs block bg-slate-900 p-3 rounded-xl border border-slate-800">
+                        support@aachicoinfotech.com
+                    </span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
+            <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

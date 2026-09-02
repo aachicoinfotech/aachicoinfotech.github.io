@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एंटरप्राइज़ सॉल्यूशन - Aachico Infotech | Aachico Vault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        brandPrimary: '#6366f1',
+                        brandAccent: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brandPrimary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
+                    <i data-lucide="building-2" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Corporate Software Hub</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
+                <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+                <a href="enterprise.html" class="text-indigo-400 font-semibold">एंटरप्राइज़</a>
+                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </nav>
+            <div>
+                <a href="index.html#download" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span>ऐप डाउनलोड</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-purple-500/10 text-purple-400 border border-purple-500/20 inline-block mb-6">VIP Tier & Corporate Fleet OS</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+                    एंटरप्राइज़ <span class="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">कस्टम समाधान</span>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    बड़े ट्रांसपोर्ट ऑपरेटरों और कॉर्पोरेट फ्लीट के लिए समर्पित सर्वर, कस्टम ब्रांडेड ऐप और 24/7 वीआईपी सहायता।
+                </p>
+            </div>
+        </section>
+
+        <!-- Enterprise Features Grid -->
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Feature 1 -->
+                <div class="bg-cardBg backdrop-blur-xl border border-purple-500/40 rounded-2xl p-8 flex flex-col justify-between hover:border-purple-500/80 transition-all">
+                    <div>
+                        <div class="bg-purple-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-purple-400 mb-6">
+                            <i data-lucide="server" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Dedicated Server</h3>
+                        <p class="text-xs text-purple-400 font-semibold mb-4 uppercase tracking-wider">समर्पित क्लाउड</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            आपके फ्लीट डेटा के लिए पूरी तरह सुरक्षित और स्वतंत्र डेडिकेटेड क्लाउड सर्वर इंफ्रास्ट्रक्चर।
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-cardBg backdrop-blur-xl border border-purple-500/40 rounded-2xl p-8 flex flex-col justify-between hover:border-purple-500/80 transition-all">
+                    <div>
+                        <div class="bg-indigo-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-indigo-400 mb-6">
+                            <i data-lucide="smartphone" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Custom Branded App</h3>
+                        <p class="text-xs text-indigo-400 font-semibold mb-4 uppercase tracking-wider">कस्टम लोगो और ब्रांड</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            आपकी अपनी कंपनी के नाम और लोगो के साथ कस्टमाइज्ड मोबाइल ऐप और पोर्टल इंटरफेस।
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-cardBg backdrop-blur-xl border border-purple-500/40 rounded-2xl p-8 flex flex-col justify-between hover:border-purple-500/80 transition-all">
+                    <div>
+                        <div class="bg-emerald-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-emerald-400 mb-6">
+                            <i data-lucide="headphones" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">24/7 VIP Support</h3>
+                        <p class="text-xs text-emerald-400 font-semibold mb-4 uppercase tracking-wider">समर्पित मैनेजर</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            किसी भी तकनीकी आवश्यकता के लिए उदयपुर कार्यालय से सीधा और त्वरित वीआईपी सहायता प्रबंधक।
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Call to Action Box -->
+            <div class="mt-12 bg-gradient-to-r from-indigo-950/60 to-purple-950/60 border border-indigo-500/40 rounded-2xl p-8 text-center max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-white mb-3">अपने फ्लीट बिजनेस को दें एंटरप्राइज़ रफ्तार</h3>
+                <p class="text-slate-300 text-sm mb-6">कस्टम सॉल्यूशन और वीआईपी प्लान की कीमत जानने के लिए आज ही हमारी टीम से संपर्क करें।</p>
+                <a href="contact.html" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all inline-flex items-center space-x-2">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                    <span>कंसल्टेशन बुक करें</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
+            <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

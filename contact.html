@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संपर्क करें - Aachico Infotech | Aachico Vault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        brandPrimary: '#6366f1',
+                        brandAccent: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brandPrimary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
+                    <i data-lucide="headphones" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Corporate Software Hub</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
+                <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="contact.html" class="text-indigo-400 font-semibold">संपर्क</a>
+            </nav>
+            <div>
+                <a href="index.html#download" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span>ऐप डाउनलोड</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 inline-block mb-6">हम हमेशा आपकी सेवा में हैं</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+                    हमसे <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">संपर्क करें</span>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    Aachico Vault फ्लीट मैनेजमेंट ओएस का डेमो बुक करने या किसी भी तकनीकी सहायता के लिए नीचे दिए गए फॉर्म का उपयोग करें।
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info Section -->
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Contact Info Box -->
+                <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">कार्यालय का विवरण</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            हम राजस्थान के ऐतिहासिक शहर उदयपुर से आपके ट्रांसपोर्ट बिजनेस को डिजिटल और ऑटोमेटेड बनाने के लिए कार्यरत हैं।
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-indigo-500/10 p-3 rounded-xl text-indigo-400 mt-1">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">लोकेशन</h4>
+                                <p class="text-slate-400 text-sm">उदयपुर, राजस्थान, भारत</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-emerald-500/10 p-3 rounded-xl text-emerald-400 mt-1">
+                                <i data-lucide="message-square" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">व्हाट्सएप सपोर्ट</h4>
+                                <p class="text-slate-400 text-sm">त्वरित उत्तर के लिए सीधा संदेश भेजें</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-purple-500/10 p-3 rounded-xl text-purple-400 mt-1">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">कॉर्पोरेट ईमेल</h4>
+                                <p class="text-slate-400 text-sm">support@aachicoinfotech.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Integrated Form -->
+                <div class="bg-cardBg backdrop-blur-xl border border-indigo-500/40 rounded-2xl p-8 shadow-xl shadow-indigo-500/10">
+                    <h3 class="text-2xl font-bold text-white mb-6">डेमो या पूछताछ के लिए संदेश भेजें</h3>
+                    
+                    <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">आपका नाम / कंपनी नाम</label>
+                            <input type="text" id="name" required class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors" placeholder="उदा. राजेश ट्रांसपोर्ट उदयपुर">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">मोबाइल नंबर</label>
+                            <input type="tel" id="phone" required class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors" placeholder="उदा. 9876543210">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">संदेश / आवश्यकता</label>
+                            <textarea id="message" rows="4" required class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors" placeholder="मुझे Aachico Vault का डेमो चाहिए..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center justify-center space-x-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>व्हाट्सएप पर भेजें</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
+            <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
+                <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Redirect Script -->
+    <script>
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // अपना व्हाट्सएप नंबर यहाँ सेट करें (बिना + के देश के कोड के साथ, उदा. 919876543210)
+            const whatsappNumber = "919876543210"; 
+
+            const text = `नमस्कार Aachico Infotech टीम,%0A%0A*नाम:* ${name}%0A*मोबाइल:* ${phone}%0A*संदेश:* ${message}`;
+            
+            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+        }
+    </script>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

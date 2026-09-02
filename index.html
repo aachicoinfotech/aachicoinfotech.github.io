@@ -42,8 +42,8 @@
       <!-- Navigation Links -->
       <nav class="hidden md:flex items-center space-x-6 text-xs font-semibold text-slate-300">
         <a href="#products" class="hover:text-sky-400 transition">उत्पाद (Products)</a>
+        <a href="#portals" class="hover:text-sky-400 transition">पोर्टल लिंक्स (Logins)</a>
         <a href="#downloads" class="hover:text-sky-400 transition">डाउनलोड सेंटर (Apps)</a>
-        <a href="#services" class="hover:text-sky-400 transition">सेवाएँ (Services)</a>
         <a href="#about" class="hover:text-sky-400 transition">कंपनी परिचय</a>
       </nav>
 
@@ -79,29 +79,66 @@
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
-        <a href="#products" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-6 py-3 rounded-xl text-sm transition shadow-lg shadow-sky-500/25">
-          <i data-lucide="layers" class="w-4 h-4"></i>
-          <span>हमारे सॉफ्टवेयर देखें</span>
+        <a href="#portals" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-6 py-3 rounded-xl text-sm transition shadow-lg shadow-sky-500/25">
+          <i data-lucide="key-round" class="w-4 h-4"></i>
+          <span>क्विक लॉगिन पोर्टल्स</span>
         </a>
         <a href="#downloads" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold px-6 py-3 rounded-xl text-sm transition">
           <i data-lucide="download" class="w-4 h-4 text-sky-400"></i>
-          <span>डाउनलोड हब</span>
+          <span>डाउनलोड हब (Apps)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUICK ACCESS PORTALS ================= -->
+  <section id="portals" class="py-12 bg-slate-900/30 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="text-center space-y-1">
+        <span class="text-xs uppercase tracking-widest text-sky-400 font-bold">Direct Cloud Portals</span>
+        <h2 class="text-xl sm:text-2xl font-extrabold text-white">सीधे लॉगिन करें (Choose Your Role)</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        <!-- Admin Card -->
+        <a href="https://aachicoinfotech.github.io/aachico-vault/admin.html" class="glass-card p-4 rounded-2xl border border-sky-500/20 hover:border-sky-500/60 transition group text-center space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 mx-auto flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white">कंपनी एडमिन (Owner)</h4>
+          <p class="text-[11px] text-slate-400">गाड़ी जोड़ें, ड्राइवर पिन रीसेट और पूरा खाता देखें</p>
+        </a>
+
+        <!-- Manager Card -->
+        <a href="https://aachicoinfotech.github.io/aachico-vault/manager.html" class="glass-card p-4 rounded-2xl border border-teal-500/20 hover:border-teal-500/60 transition group text-center space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 mx-auto flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i data-lucide="receipt" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-sm text-teal-300">मैनेजर डेस्क (Operations)</h4>
+          <p class="text-[11px] text-slate-400">दैनिक बिलिंग, इनवॉइस प्रिंट, ड्यूटी अलॉट और बकाया लेज़र</p>
+        </a>
+
+        <!-- Driver Card -->
+        <a href="https://aachicoinfotech.github.io/aachico-vault/driver.html" class="glass-card p-4 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/60 transition group text-center space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 mx-auto flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i data-lucide="steering-wheel" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-sm text-emerald-400">ड्राइवर ऐप (Driver)</h4>
+          <p class="text-[11px] text-slate-400">मीटर रीडिंग, स्टार्ट/एंड KM, पेट्रोल और ट्रिप एंट्री</p>
         </a>
       </div>
     </div>
   </section>
 
   <!-- ================= FLAGSHIP PRODUCTS ================= -->
-  <section id="products" class="py-16 bg-slate-900/40 border-y border-slate-800/80">
+  <section id="products" class="py-16 bg-slate-900/50 border-y border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
       <div class="text-center space-y-2">
         <span class="text-xs uppercase tracking-widest text-sky-400 font-bold">Featured Solutions</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white">प्रमुख उत्पाद व सॉफ्टवेयर</h2>
-        <p class="text-xs sm:text-sm text-slate-400">हर बिज़नेस ऑपरेशन को आसान बनाने वाले टूल्स</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        
         <!-- Product 1: Aachico Vault -->
         <div class="glass-card p-6 rounded-3xl border border-amber-500/30 space-y-5 transition glass-card-hover relative overflow-hidden">
           <div class="flex items-start justify-between">
@@ -117,17 +154,14 @@
               <span class="text-xs text-amber-400 font-normal">(फ़्लीट ओएस)</span>
             </h3>
             <p class="text-xs text-slate-300 leading-relaxed">
-              टैक्सी व ट्रांसपोर्ट ऑपरेटरों के लिए स्मार्ट फ़्लीट मैनेजमेंट। डिजिटल मीटर फोटो ऑडिट, 4-कार्ड ड्राइवर कैश लेज़र, डीज़ल माइलेज चोरी ट्रैकिंग और WhatsApp इनवॉइसिंग।
+              टैक्सी व ट्रांसपोर्ट ऑपरेटरों के लिए कम्प्लीट मैनेजमेंट। मीटर ऑडिट, ड्राइवर कैश लेज़र, मैनेजर इनवॉइसिंग और लाइव क्लाउड सिंक।
             </p>
           </div>
 
-          <div class="flex items-center space-x-3 pt-2">
-            <a href="https://aachicoinfotech.github.io/aachico-vault/" class="flex-1 text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded-xl text-xs transition">
-              वेबसाइट खोलें
-            </a>
-            <a href="https://aachicoinfotech.github.io/aachico-vault/admin.html" class="flex-1 text-center bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold py-2.5 rounded-xl text-xs transition">
-              एडमिन लॉगिन
-            </a>
+          <div class="grid grid-cols-3 gap-2 pt-2 text-center text-xs">
+            <a href="https://aachicoinfotech.github.io/aachico-vault/" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2 rounded-xl transition">वेबसाइट</a>
+            <a href="https://aachicoinfotech.github.io/aachico-vault/admin.html" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold py-2 rounded-xl transition">एडमिन</a>
+            <a href="https://aachicoinfotech.github.io/aachico-vault/manager.html" class="bg-teal-500/20 hover:bg-teal-500/30 text-teal-300 border border-teal-500/30 font-bold py-2 rounded-xl transition">मैनेजर</a>
           </div>
         </div>
 
@@ -154,7 +188,6 @@
             </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -169,7 +202,6 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        
         <!-- Windows Card -->
         <div class="glass-card p-5 rounded-2xl border border-slate-800 space-y-4">
           <div class="flex items-center space-x-3">
@@ -181,7 +213,7 @@
               <span class="text-[10px] text-slate-400">64-bit (.exe)</span>
             </div>
           </div>
-          <p class="text-[11px] text-slate-400">डेस्कटॉप एडमिन डैशबोर्ड और तेज़ फ्लीट मैनेजमेंट के लिए।</p>
+          <p class="text-[11px] text-slate-400">डेस्कटॉप एडमिन व मैनेजर बिलिंग डैशबोर्ड के लिए।</p>
           <button onclick="downloadAlert('Windows')" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2 rounded-xl text-xs transition flex items-center justify-center space-x-1.5">
             <i data-lucide="download" class="w-3.5 h-3.5"></i>
             <span>Download .EXE</span>
@@ -199,7 +231,7 @@
               <span class="text-[10px] text-slate-400">Debian / AppImage</span>
             </div>
           </div>
-          <p class="text-[11px] text-slate-400">Ubuntu, Debian और Linux आधारित प्रणालियों के लिए पैकेज।</p>
+          <p class="text-[11px] text-slate-400">Ubuntu, Debian और Linux प्रणालियों के लिए पैकेज।</p>
           <button onclick="downloadAlert('Linux')" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold py-2 rounded-xl text-xs transition flex items-center justify-center space-x-1.5">
             <i data-lucide="download" class="w-3.5 h-3.5"></i>
             <span>Download .DEB</span>
@@ -241,7 +273,6 @@
             <span>Add to Home Screen</span>
           </button>
         </div>
-
       </div>
     </div>
   </section>
@@ -282,8 +313,9 @@
       <p>© 2026 Aachico Infotech. सर्वाधिकार सुरक्षित।</p>
       <div class="flex items-center space-x-4 text-slate-400">
         <a href="https://aachicoinfotech.github.io/aachico-vault/" class="hover:text-sky-400">Aachico Vault</a>
-        <a href="https://aachicoinfotech.github.io/aachico-vault/admin.html" class="hover:text-sky-400">Admin Login</a>
-        <a href="https://aachicoinfotech.github.io/aachico-vault/driver.html" class="hover:text-sky-400">Driver App</a>
+        <a href="https://aachicoinfotech.github.io/aachico-vault/admin.html" class="hover:text-sky-400">Admin</a>
+        <a href="https://aachicoinfotech.github.io/aachico-vault/manager.html" class="hover:text-teal-400">Manager</a>
+        <a href="https://aachicoinfotech.github.io/aachico-vault/driver.html" class="hover:text-emerald-400">Driver</a>
       </div>
     </div>
   </footer>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>एपीआई दस्तावेज़ - Aachico Infotech | Aachico Vault</title>
+    <title>API दस्तावेज़ीकरण - Aachico Infotech | Aachico Vault</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -31,7 +31,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
-                    <i data-lucide="terminal" class="w-6 h-6 text-white"></i>
+                    <i data-lucide="code" class="w-6 h-6 text-white"></i>
                 </div>
                 <div>
                     <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
@@ -42,6 +42,7 @@
                 <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
                 <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
                 <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+                <a href="api-docs.html" class="text-indigo-400 font-semibold">API डॉक्स</a>
                 <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
                 <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
             </nav>
@@ -60,53 +61,41 @@
         <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
             <div class="max-w-4xl mx-auto text-center relative z-10">
-                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 inline-block mb-6">डेवलपर पोर्टल और इंटीग्रेशन</span>
+                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 inline-block mb-6">डेवलपर संसाधन</span>
                 <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
-                    Aachico Vault <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">API दस्तावेज़</span>
+                    Aachico Vault <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">API दस्तावेज़ीकरण</span>
                 </h1>
                 <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-                    अपने ट्रांसपोर्ट बिजनेस सिस्टम को हमारे फ्लीट मैनेजमेंट ओएस के साथ जोड़ने के लिए सुरक्षित REST API एंडपॉइंट्स।
+                    थर्ड-पार्टी एप्लिकेशन, जीपीएस डिवाइस और कस्टम डैशबोर्ड के साथ फ्लीट डेटा सिंक करने के लिए सुरक्षित REST API एंडपॉइंट्स।
                 </p>
             </div>
         </section>
 
-        <!-- Content Section -->
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-8 text-slate-300 text-sm leading-relaxed">
+        <!-- API Endpoints Section -->
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-6">
             
-            <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 space-y-4">
-                <h2 class="text-xl font-bold text-white flex items-center space-x-3">
-                    <i data-lucide="key" class="w-5 h-5 text-indigo-400"></i>
-                    <span>1. प्रमाणीकरण (Authentication)</span>
-                </h2>
-                <p>
-                    सभी एपीआई अनुरोधों के लिए हेडर में एक वैध Bearer Token का होना अनिवार्य है। आप अपने एडमिन डैशबोर्ड से API Key जनरेट कर सकते हैं।
-                </p>
+            <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 space-y-4">
+                <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">POST /v1/trips/sync</span>
+                    <span class="text-xs text-slate-400">ऑथेंटिकेशन आवश्यक</span>
+                </div>
+                <h3 class="text-lg font-bold text-white">नई ट्रिप प्रविष्टि सिंक करें</h3>
+                <p class="text-slate-400 text-sm">इस एंडपॉइंट के माध्यम से ड्राइवर पोर्टल या मोबाइल ऐप से सीधे फ्लीट डेटा क्लाउड सर्वर पर भेजा जाता है।</p>
                 <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-indigo-300 border border-slate-800">
-                    Authorization: Bearer <span class="text-purple-400">YOUR_AACHICO_API_KEY</span>
+                    curl -X POST https://api.aachicoinfotech.com/v1/trips/sync -H "Authorization: Bearer YOUR_TOKEN"
                 </div>
             </div>
 
-            <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 space-y-4">
-                <h2 class="text-xl font-bold text-white flex items-center space-x-3">
-                    <i data-lucide="truck" class="w-5 h-5 text-indigo-400"></i>
-                    <span>2. ट्रिप डेटा प्राप्त करें (Get Trips API)</span>
-                </h2>
-                <p>
-                    फ्लीट की लाइव ट्रिप प्रविष्टियों और बिलिंग विवरण को प्राप्त करने के लिए निम्नलिखित एंडपॉइंट का उपयोग करें:
-                </p>
-                <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-emerald-400 border border-slate-800">
-                    GET https://api.aachicoinfotech.com/v1/vault/trips
+            <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 space-y-4">
+                <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">GET /v1/fleet/status</span>
+                    <span class="text-xs text-slate-400">रीयल-टाइम डेटा</span>
                 </div>
-            </div>
-
-            <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 space-y-4">
-                <h2 class="text-xl font-bold text-white flex items-center space-x-3">
-                    <i data-lucide="headphones" class="w-5 h-5 text-indigo-400"></i>
-                    <span>3. तकनीकी सहायता</span>
-                </h2>
-                <p>
-                    यदि आपको कस्टम इंटीग्रेशन या वेबहुक कॉन्फ़िगरेशन में कोई सहायता चाहिए, तो आप सीधे हमारे उदयपुर कार्यालय की तकनीकी टीम से संपर्क कर सकते हैं।
-                </p>
+                <h3 class="text-lg font-bold text-white">वाहन और फ्लीट स्थिति प्राप्त करें</h3>
+                <p class="text-slate-400 text-sm">सभी सक्रिय वाहनों की वर्तमान स्थिति और टोल लेजर का डेटा फेच करने के लिए।</p>
+                <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-indigo-300 border border-slate-800">
+                    curl -X GET https://api.aachicoinfotech.com/v1/fleet/status -H "Authorization: Bearer YOUR_TOKEN"
+                </div>
             </div>
 
         </section>
@@ -118,7 +107,7 @@
             <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
             <div class="flex space-x-6 mt-4 sm:mt-0">
                 <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
-                <a href="contact.html" class="hover:text-indigo-400 transition-colors">सहायता</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
             </div>
         </div>
     </footer>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हमारे बारे में - Aachico Infotech | Aachico Vault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        brandPrimary: '#6366f1',
+                        brandAccent: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brandPrimary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
+                    <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Corporate Software Hub</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="about.html" class="text-indigo-400 font-semibold">हमारे बारे में</a>
+                <a href="products.html" class="hover:text-indigo-400 transition-colors">उत्पाद</a>
+                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
+            </nav>
+            <div>
+                <a href="index.html#download" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span>ऐप डाउनलोड</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
+            <div class="max-w-5xl mx-auto text-center relative z-10">
+                <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 inline-block mb-6">उदयपुर से ग्लोबल टेक विजन</span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
+                    स्मार्ट ट्रांसपोर्ट और <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">बिजनेस ऑटोमेशन</span> का भविष्य
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                    Aachico Infotech भारत के ऐतिहासिक शहर उदयपुर से संचालित एक अग्रणी सॉफ्टवेयर और बिजनेस ऑटोमेशन हाउस है। हम टैक्सी, फ्लीट और ट्रांसपोर्ट ऑपरेटरों के लिए एंटरप्राइज़-ग्रेड क्लाउड समाधान तैयार कर रहे हैं।
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Cards -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:border-indigo-500/50 transition-all group">
+                    <div class="bg-indigo-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="target" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">हमारा मिशन</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        पारंपरिक ट्रांसपोर्ट और टैक्सी ऑपरेटरों को अत्याधुनिक डिजिटल टूल्स से सशक्त बनाना, जिससे उनकी दैनिक ट्रिप प्रविष्टि, टोल प्रबंधन और बिलिंग पूरी तरह ऑटोमेटेड हो सके।
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:border-indigo-500/50 transition-all group">
+                    <div class="bg-purple-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="eye" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">हमारा विजन</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        'Aachico Vault' को ग्लोबल फ्लीट मैनेजमेंट ओएस के रूप में स्थापित करना, जो दुनिया भर के ट्रांसपोर्ट बिजनेस के लिए स्केलेबल, सिक्योर और यूजर-फ्रेंडली हो।
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:border-indigo-500/50 transition-all group">
+                    <div class="bg-emerald-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cpu" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">कोर टेक्नोलॉजी</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        अति-आधुनिक क्लाउड आर्किटेक्चर, रियल-टाइम डेटा सिंक और सुरक्षित एपीआई आधारित इकोसिस्टम जो बिना किसी रुकावट के 24/7 काम करता है।
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
+            <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
+                <a href="privacy.html" class="hover:text-indigo-400 transition-colors">प्राइवेसी पॉलिसी</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition-colors">सहायता</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

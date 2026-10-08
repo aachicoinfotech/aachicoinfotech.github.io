@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="hi" class="dark">
+<html lang="hi" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>हमारे उत्पाद और समाधान - Aachico Infotech | Aachico Vault</title>
+    
+    <meta name="description" content="Explore flagship products and cloud OS solutions by Aachico Infotech, including Aachico Vault fleet management and custom enterprise software." />
+    <link rel="canonical" href="https://aachicoinfotech.github.io/products.html" />
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,13 +25,15 @@
             }
         }
     </script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brandPrimary selection:text-white">
 
+    <!-- Header / Navbar -->
     <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-3 group">
                 <div class="bg-gradient-to-tr from-brandPrimary to-brandAccent p-2.5 rounded-xl shadow-lg shadow-indigo-500/30">
                     <i data-lucide="box" class="w-6 h-6 text-white"></i>
                 </div>
@@ -34,16 +41,17 @@
                     <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">AACHICO INFOTECH</span>
                     <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Corporate Software Hub</span>
                 </div>
-            </div>
+            </a>
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
                 <a href="index.html" class="hover:text-indigo-400 transition-colors">होम</a>
                 <a href="about.html" class="hover:text-indigo-400 transition-colors">हमारे बारे में</a>
                 <a href="products.html" class="text-indigo-400 font-semibold">उत्पाद</a>
-                <a href="pricing.html" class="hover:text-indigo-400 transition-colors">प्राइसिंग</a>
+                <a href="portal-gateway.html" class="hover:text-indigo-400 transition-colors">पोर्टल गेटवे</a>
+                <a href="downloads.html" class="hover:text-indigo-400 transition-colors">डाउनलोड्स</a>
                 <a href="contact.html" class="hover:text-indigo-400 transition-colors">संपर्क</a>
             </nav>
             <div>
-                <a href="index.html#download" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
+                <a href="downloads.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandPrimary to-brandAccent text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all flex items-center space-x-2">
                     <i data-lucide="download" class="w-4 h-4"></i>
                     <span>ऐप डाउनलोड</span>
                 </a>
@@ -51,7 +59,9 @@
         </div>
     </header>
 
+    <!-- Main Content Section -->
     <main class="flex-grow">
+        <!-- Hero Section -->
         <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none"></div>
             <div class="max-w-4xl mx-auto text-center relative z-10">
@@ -60,14 +70,16 @@
                     हमारे फ्लैगशिप <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">उत्पाद और ओएस</span>
                 </h1>
                 <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-                    транспорт (Transport), फ्लीट मैनेजमेंट और बिजनेस ऑटोमेशन को आसान बनाने के लिए हमारे अत्याधुनिक क्लाउड-बेस्ड सॉफ़्टवेयर समाधान।
+                    ट्रांसपोर्ट, फ्लीट मैनेजमेंट और बिजनेस ऑटोमेशन को आसान बनाने के लिए हमारे अत्याधुनिक क्लाउड-बेस्ड सॉफ़्टवेयर समाधान।
                 </p>
             </div>
         </section>
 
+        <!-- Products Grid Section -->
         <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
+                <!-- Product 1: Aachico Vault -->
                 <div class="bg-cardBg backdrop-blur-xl border border-indigo-500/40 rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden shadow-xl shadow-indigo-500/10 group">
                     <div class="absolute top-0 right-0 bg-gradient-to-l from-indigo-600 to-purple-600 text-white text-[10px] font-bold uppercase tracking-wider px-4 py-1 rounded-bl-xl">फ्लैगशिप ओएस</div>
                     <div>
@@ -86,13 +98,14 @@
                             <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span>ड्राइवर और ट्रिप मैनेजमेंट</span></li>
                             <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i><span>ऑटोमैटिक एक्सपेंस और टोल रिपोर्ट</span></li>
                         </ul>
-                        <a href="index.html#download" class="w-full py-3 rounded-xl bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white font-medium text-sm transition-all flex items-center justify-center space-x-2 border border-indigo-500/30">
+                        <a href="downloads.html" class="w-full py-3 rounded-xl bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white font-medium text-sm transition-all flex items-center justify-center space-x-2 border border-indigo-500/30">
                             <span>विवरण देखें / डाउनलोड करें</span>
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
 
+                <!-- Product 2: Custom Software -->
                 <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between hover:border-indigo-500/50 transition-all group">
                     <div>
                         <div class="bg-purple-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform">
@@ -117,6 +130,7 @@
                     </div>
                 </div>
 
+                <!-- Product 3: Utility Suite -->
                 <div class="bg-cardBg backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between hover:border-indigo-500/50 transition-all group">
                     <div>
                         <div class="bg-amber-500/10 w-14 h-14 rounded-xl flex items-center justify-center text-amber-400 mb-6 group-hover:scale-110 transition-transform">
@@ -144,6 +158,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-darkBg border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 mt-20">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
             <p>&copy; 2026 Aachico Infotech, Udaipur. सर्वाधिकार सुरक्षित।</p>
@@ -155,6 +170,7 @@
         </div>
     </footer>
 
+    <!-- Lucide Icons Initialization -->
     <script>
         lucide.createIcons();
     </script>
